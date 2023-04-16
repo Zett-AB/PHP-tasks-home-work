@@ -75,14 +75,28 @@
                     Просуммируйте их, а результат присвойте переменной <b>$result</b>.<br>
                     Выведите на экран значение переменной <b>$result</b>.
                 </p>
-                <div class="code_php"></div>
+                <div class="code_php">
+                    <?php
+                    $c = 15;
+                    $d = 2;
+                    $result = $c + $d;
+                    echo $result;
+                    ?>
+                </div>
             </div>
             <div class="">
                 <p>
                     Создайте переменные <b>$a=10, $b=2</b> и <b>$c=5</b>.<br>
                     Выведите на экран их сумму.
                 </p>
-                <div class="code_php"></div>
+                <div class="code_php">
+                    <?php
+                    $a = 10;
+                    $b = 2;
+                    $c = 5;
+                    echo $a + $b + $c;
+                    ?>
+                </div>
             </div>
             <div class="">
                 <p>
@@ -92,7 +106,16 @@
                     Сложите переменные <b>$c</b> и <b>$d</b>, а результат запишите в переменную <b>$result</b>.<br>
                     Выведите на экран значение переменной <b>$result</b>.
                 </p>
-                <div class="code_php"></div>
+                <div class="code_php">
+                    <?php
+                    $a = 17;
+                    $b = 10;
+                    $c = $a - $b;
+                    $d = 7;
+                    $result = $c + $d;
+                    echo $result;
+                    ?>
+                </div>
             </div>
         </div>
         <div class="tasks">
@@ -103,14 +126,25 @@
                 <p>
                     Создайте переменную <b>$text</b> и присвойте ей значение 'Привет, Мир!'.<br> Выведите значение этой переменной на экран.
                 </p>
-                <div class="code_php"></div>
+                <div class="code_php">
+                    <?php
+                    $text = 'Привет Мир!';
+                    echo "<p>" . $text . "</p>";
+                    ?>
+                </div>
             </div>
             <div class="">
                 <p>
                     Создайте переменные <b>$text1='Привет, '</b> и <b>$text2='Мир!'</b>.<br>
-                    С помощью этих переменных и операции сложения строк выведите на экран фразу <b>'Привет, Мир!'</b>.
+                    С помощью этих переменных и операции конкотенации, а именно поставив <b>точку</b> между переменными, выведите на экран фразу <b>'Привет, Мир!'</b>.
                 </p>
-                <div class="code_php"></div>
+                <div class="code_php">
+                    <?php
+                    $text = 'Привет, ';
+                    $text2 = 'Мир!';
+                    echo  $text . $text2;
+                    ?>
+                </div>
             </div>
             <div class="">
                 <p>
@@ -118,14 +152,30 @@
                     Выведите на экран фразу <b>'Привет, %Имя%!'</b>.<br>
                     Вместо <b>%Имя%</b> должно стоять ваше имя.
                 </p>
-                <div class="code_php"></div>
+                <div class="code_php">
+                    <?php
+                    $name = 'Александр';
+                    $offer = 'Привет, ';
+                    echo "<h5 class='subtitle_php'>" . $offer . $name . "</h5>";
+                    ?>
+                </div>
             </div>
             <div class="">
                 <p>
                     Создайте переменную <b>$age</b> и присвойте ей ваш возраст.<br>
                     Выведите на экран <b>'Мне %Возраст% лет!'</b>.
                 </p>
-                <div class="code_php"></div>
+                <div class="code_php">
+                    <?php
+                    $age = 51;
+                    $text1 = 'Мне ';
+                    $text2 = ' лет!';
+                    // $text=''
+                    echo "<p>" . 'Мне ' . $age . ' лет!' . "</p>";
+                    echo "<p>" . 'или второй вариант с тремя переменными $age = 51;
+                    $text1 = Мне ; $text2 =  лет!;' . "<br>" . "<br>" . $text1 . $age . $text2 . "</p>";
+                    ?>
+                </div>
             </div>
         </div>
         <div class="tasks">
@@ -137,21 +187,39 @@
                     Создайте переменную <b>$text</b> и присвойте ей значение <b>'abcde'</b>.<br>
                     Обращаясь к отдельным символам этой строки выведите на экран символ <b>'a'</b>, символ <b>'c'</b>, символ <b>'e'</b>.
                 </p>
-                <div class="code_php"></div>
+                <div class="code_php">
+                    <?php
+                    $text = 'abcde';
+                    echo "<p>" . $text[0] . "<br>" . $text[2] . "<br>" . $text[4] . "</p>";
+                    ?>
+                </div>
             </div>
             <div class="">
                 <p>
                     Дана произвольная строка, например, <b>'abcde'</b>.<br>
                     Поменяйте первую букву (то есть букву <b>'a'</b>) этой строки на <b>'!'</b>.
                 </p>
-                <div class="code_php"></div>
+                <div class="code_php">
+                    <?php
+                    $letters = 'abcde';
+                    echo "<p>" . $letters . "<br>" . "</p>";
+                    $letters[0] = '!';
+                    echo "<p>" . $letters . "<br>" . "</p>";
+                    ?>
+                </div>
             </div>
             <div class="">
                 <p>
                     Создайте переменную <b>$num</b> и присвойте ей значение <b>'12345'</b>.<br>
                     Найдите сумму цифр этого числа.
                 </p>
-                <div class="code_php"></div>
+                <div class="code_php">
+                    <?php
+                    $num = '12345';
+                    echo $num[0] + $num[1] + $num[2] + $num[3] + $num[4];
+
+                    ?>
+                </div>
             </div>
         </div>
         <div class="tasks">
@@ -162,14 +230,28 @@
                 <p>
                     Напишите скрипт, который считает количество секунд в часе, в сутках, в месяце.
                 </p>
-                <div class="code_php"></div>
+                <div class="code_php">
+                    <?php
+                    echo (60 * 60) . "<br>";
+                    echo (60 * 60 * 24) . "<br>";
+                    echo (60 * 60 * 24 * 30);
+                    ?>
+                </div>
             </div>
             <div class="">
                 <p>
                     Создайте три переменные - <b>час, минута, секунда</b>.<br>
                     С их помощью выведите текущее время в формате <b>'час:минута:секунда'</b>.
                 </p>
-                <div class="code_php"></div>
+                <div class="code_php">
+                    <?php
+                    $hour = 'час';
+                    $min = 'минута';
+                    $sec = 'секунда';
+
+                    echo "<p>" . $hour . " : " . $min . " : " . $sec . "</p>";
+                    ?>
+                </div>
             </div>
             <div class="">
                 <p>
@@ -177,7 +259,12 @@
                     Возведите это число в квадрат (это значит нужно умножить его само на себя).<br>
                     Выведите его на экран.
                 </p>
-                <div class="code_php"></div>
+                <div class="code_php">
+                    <?php
+                    $num = 50;
+                    echo $num ** 2;
+                    ?>
+                </div>
             </div>
         </div>
         <div class="tasks">
@@ -197,7 +284,16 @@
                     $var = $var / 20;<br>
                     echo $var;
                 </p>
-                <div class="code_php"></div>
+                <div class="code_php">
+                    <?php
+                    $var = 47;
+                    $var += 7;
+                    $var -= 18;
+                    $var *= 10;
+                    $var /= 20;
+                    echo $var;
+                    ?>
+                </div>
             </div>
             <div class="">
                 <p>
@@ -211,7 +307,15 @@
                     $text = $text.' PHP!';<br>
                     echo $text;
                 </p>
-                <div class="code_php"></div>
+                <div class="code_php">
+                    <?php
+                    $text = 'Я';
+                    $text .= ' хочу';
+                    $text .= ' знать';
+                    $text .= ' PHP!';
+                    echo $text;
+                    ?>
+                </div>
             </div>
             <div class="">
                 <p>
@@ -225,7 +329,15 @@
                     $var = $var - 1;<br>
                     echo $var;
                 </p>
-                <div class="code_php"></div>
+                <div class="code_php">
+                    <?php
+                    $var = 10;
+                    $var++;
+                    $var++;
+                    $var--;
+                    echo $var;
+                    ?>
+                </div>
             </div>
             <div class="">
                 <p>
@@ -242,7 +354,18 @@
                     $var = $var - 15;<br>
                     echo $var;
                 </p>
-                <div class="code_php"></div>
+                <div class="code_php">
+                    <?php
+                    $var = 10;
+                    $var += 7;
+                    $var++;
+                    $var--;
+                    $var += 12;
+                    $var *= 7;
+                    $var -= 15;
+                    echo $var;
+                    ?>
+                </div>
             </div>
         </div>
         <div class="tasks">
